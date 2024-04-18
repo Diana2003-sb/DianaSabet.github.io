@@ -1,0 +1,296 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Oswald:wght@200..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import 'swiper/swiper.min.css';
+@import 'swiper/modules/navigation.min.css';
+@import 'swiper/modules/pagination.min.css';
+
+:root {
+    --box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+* {
+    font-family: "Oswald", sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: 2s linear;
+
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 9rem;
+    scroll-behavior: smooth;
+}
+
+html::-webkit-scrollbar {
+    width: 0.8rem;
+}
+
+html::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+html::-webkit-scrollbar-thumb {
+    background: rgb(234, 206, 246);
+    border-radius: .2rem;
+}
+
+section {
+    padding: 5rem 7%;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 16px;
+    padding: 16px 48px;
+    background-color: #f9cbfb;
+    border-radius: 8px;
+    color: #eeeff5;
+    font-size: 27px;
+    cursor: pointer;
+    padding: 16px 32px;
+    max-width: 130px;
+    height: auto;
+}
+
+.btn:hover {
+    background-color: #fcb0f4;
+}
+
+.header {
+    background: rgb(255, 255, 255);
+    box-shadow: var(--box-shadow);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 32px 9%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
+
+.header .logo {
+    font-size: 40px;
+    font-weight: bolder;
+    color: #000000;
+}
+
+.header .logo.i {
+    color: rgb(246, 249, 249);
+    padding-right: 8px;
+}
+
+.header .navbar a {
+    font-size: 27.2px;
+    color: #100f10;
+    margin: 0 16px;
+}
+
+.header .navbar a:hover {
+    color: rgb(242, 195, 246);
+}
+
+.header .navbar .btn {
+    margin-top: 0;
+    color: rgb(8, 7, 7);
+    background-color: #fadbfb;
+
+}
+
+.header .navbar .btn:hover {
+    background: #eab8ff;
+    color: #060606;
+}
+
+#menu-btn {
+    display: none;
+}
+
+.home {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #dbd8d8;
+    padding: 3px;
+}
+
+.home .swiper-slide {
+    min-height: 100vh;
+    background-size: cover !important;
+    background-position: center !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: -1;
+}
+
+.home .swiper-slide .content {
+    width: 80rem;
+    text-align: center;
+}
+
+.home .swiper-slide .content h3 {
+    font-size: 32px;
+    text-transform: uppercase;
+    color: #101113;
+    line-height: 1.1;
+    padding: 4rem 0;
+
+}
+
+.home .swiper-slide .content a {
+    font-size: 20px;
+
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+    height: 5rem;
+    width: 5rem;
+    line-height: 5rem;
+    color: #000;
+}
+
+.swiper-button-prev :hover,
+.swiper-button-next:hover {
+    background: #d590f3;
+    color: #f6f7f8;
+}
+
+.swiper-button-prev::after,
+.swiper-button-next::after {
+    font-size: 32px;
+
+}
+
+/*Section*/
+/*Section*/
+.avaibility {
+    position: relative;
+}
+
+.avaibility .video-container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    /* Justera efter behov, här sätts höjden till hela fönstrets höjd */
+    overflow: hidden;
+}
+
+/* Styla videon för att fylla hela container */
+#background-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.avaibility form {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-wrap: wrap;
+    /* Ändra riktningen till horisontell */
+    gap: 1.5rem;
+    justify-content: center;
+    /* Centrera elementen horisontellt */
+    align-items: center;
+    /* Centrera elementen vertikalt */
+    background: rgba(227, 217, 217, 0.5);
+    /* Använd en RGBA-färg för att göra bakgrundsfärgen delvis transparent */
+    padding: 2rem;
+    border-radius: 0.5rem;
+    backdrop-filter: blur(5px);
+    /* Lägg till suddighet på bakgrunden */
+}
+
+
+.avaibility form .box {
+    flex: 2 2 13rem;
+}
+
+.avaibility form .box p {
+    font-size: 1.8rem;
+    color: #000;
+}
+
+.avaibility form .box .input {
+    width: 100%;
+    padding: 1rem;
+    font-size: 1.8rem;
+    color: #000;
+    margin: 1rem 0;
+    border-radius: 0.5rem;
+}
+
+.avaibility form .btn {
+    font-size: 1.8rem;
+    padding: 1rem 2rem;
+    /* Öka utrymmet runt knappen för en bättre visuell effekt */
+    color: #000000;
+    /* Ändra textfärg till vit för att öka kontrasten */
+    background-color: #fdb6f0;
+    /* Bakgrundsfärg för knappen */
+    border: #f9cbfb;
+    /* Ta bort kanten för en renare look */
+    border-radius: 0.5rem;
+    cursor: pointer;
+    /* Gör pekaren till en hand för att visa att knappen är klickbar */
+    transition: background-color 0.3s ease;
+    /* Gör knappen smidigare vid hover */
+}
+
+.avaibility form .btn:hover {
+    background-color: #f597f5;
+    /* Mörkare nyans av bakgrundsfärgen vid hover för en effekt */
+}
+
+.about .row {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 6rem;
+    /* Max bredd för innehållet */
+}
+
+.about .row .image {
+    flex: 1 1 30rem;
+}
+
+.about .row .image img {
+    width: 100%;
+}
+
+.about .row .content {
+    flex: 1 1 51rem;
+    text-align: left;
+    /* Justera texten till vänster för större läsbarhet */
+}
+
+.about .row .content h3 {
+    position: relative;
+    font-size: 3.5rem;
+    color: #e67be6;
+    padding: 2rem 0;
+    text-align: center;
+    top: 40%;
+}
+
+.about .row .content p {
+    font-size: 2rem;
+    color: #575557;
+    padding: 1rem 0;
+    line-height: 1.8;
+}

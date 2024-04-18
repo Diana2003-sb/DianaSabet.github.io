@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maldivian Bliss Hotel</title>
+    <link rel="stylesheet" href="StyleIndex.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+    <!-- Länk till Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
+</head>
+
+<body>
+    <header class="header">
+        <!-- Gör logobilden -->
+        <a href="#" class="logo">
+            <img src="logohotel.jpg" alt="Hotel Logo" class="img-fluid" style="max-width: 130px; height: auto;">
+        </a>
+
+        <!-- Navigationsmeny -->
+        <nav class="navbar">
+            <a href="index.html"> Home</a>
+            <a href="About.html">About</a>
+            <a href="Rooms.HTML">Rooms</a>
+            <a href="#"> Activities</a>
+            <a href="resturang.html">Restaurant</a>
+            <a href="Images.html">Gallery</a>
+            <a class="btn" href="#">BOOK ME</a>
+        </nav>
+        <!-- Ikoner för sökning och meny (hamburger-ikonen) -->
+        <div id="menu-btn" class="fas fa-bars"></div>
+    </header>
+    <!--home-->
+    <section class="home" id="home">
+        <div class="swiper home-slider">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide" style="background: url(Ayada_Maldives059.jpg) no-repeat;">
+                    <div class="content">
+                        <h3>Discover a dream inspired retreat</h3>
+                        <a href="#" class="btn">visit our offer</a>
+                    </div>
+                </div>
+                <div class="swiper-slide" style="background: url(maya2.jpg) no-repeat;">
+                    <div class="content">
+                        <h3>Discover a dream inspired retreat</h3>
+                        <a href="#" class="btn">visit our offer</a>
+                    </div>
+                </div>
+                <div class="swiper-slide" style="background: url(maya1.jpg) no-repeat;">
+                    <div class="content">
+                        <h3>Discover a dream inspired retreat</h3>
+                        <a href="#" class="btn">visit our offer</a>
+                    </div>
+                </div>
+                <div class="swiper-slide" style="background: url(maya5.jpg) no-repeat;">
+                    <div class="content">
+                        <h3>Discover a dream inspired retreat</h3>
+                        <a href="#" class="btn">visit our offer</a>
+                    </div>
+                </div>
+                <div class="swiper-slide" style="background: url(Maya.jpg) no-repeat;">
+                    <div class="content">
+                        <h3>Discover a dream inspired retreat</h3>
+                        <a href="#" class="btn">visit our offer</a>
+                    </div>
+                </div>
+                ...
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+
+            <!-- If we need scrollbar -->
+            <div class="swiper-scrollbar"></div>
+        </div>
+    </section>
+
+    <section class="avaibility">
+        <div class="video-container">
+            <video autoplay muted loop id="background-video">
+                <source src="VideoMaldive.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+        <form action="">
+            <div class="box">
+                <p>Check in <span>*</span></p>
+                <input type="date" class="input">
+            </div>
+            <div class="box">
+                <p>Check out <span>*</span></p>
+                <input type="date" class="input">
+            </div>
+            <div class="box">
+                <p>Adults <span>*</span>
+                    <select name="Adults" id="" class="input">
+                        <option value="1">1 Adults</option>
+                        <option value="2">2 Adults</option>
+                        <option value="3">3 Adults</option>
+                        <option value="4">4 Adults</option>
+                        <option value="5">5 Adults</option>
+                        <option value="6">6 Adults</option>
+                    </select>
+                </p>
+            </div>
+            <div class="box">
+                <p> Children<span>*</span>
+                    <select name="Adults" id="" class="input">
+                        <option value="1">1 Child</option>
+                        <option value="2">2 Child</option>
+                        <option value="3">3 Child</option>
+                        <option value="4">4 Child</option>
+                        <option value="5">5 Child</option>
+                        <option value="6">6 Child</option>
+                    </select>
+                </p>
+            </div>
+            <div class="box">
+                <p> Rooms<span>*</span>
+                    <select name="Adults" id="" class="input">
+                        <option value="1">1 Rooms</option>
+                        <option value="2">2 Rooms</option>
+                        <option value="3">3 Rooms</option>
+                        <option value="4">4 Rooms</option>
+                        <option value="5">5 Rooms</option>
+                        <option value="6">6 Rooms</option>
+                    </select>
+                </p>
+            </div>
+            <input type="submit" value="Check avaibility" class="btn">
+        </form>
+    </section>
+    <section class="about" id="about">
+        <div class="row">
+            <div class="image">
+                <img src="About2.jpg" alt="">
+            </div>
+            <div class="content">
+                <h3>About us</h3>
+                <p>Located on a beautiful private island with pristine beaches and lush tropical greenery, Maldivian
+                    Bliss offers a truly luxurious retreat in true Maldivian style.</p>
+                <p> A wide range of restaurants, large villas with private infinity pools, and our multiple
+                    award-winning Spa make Maldivian Bliss an excellent choice. A large variety of water sports,
+                    excursions, and further activities are available for our guests.
+                </p>
+            </div>
+        </div>
+
+    </section>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="index.js"></script>
+</body>
+
+</html>
